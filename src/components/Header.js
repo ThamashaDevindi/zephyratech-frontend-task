@@ -25,7 +25,7 @@ const Header = () => {
             <Nav.Link href="#home" style={{ borderBottom: '2px solid #cc7cf8' }}>Home</Nav.Link>
             <Nav.Link href="#features">Features</Nav.Link>
             <Nav.Link href="#">Pricing</Nav.Link>
-            <Nav.Link href="#">Growth</Nav.Link>
+            <Nav.Link href="#growth">Growth</Nav.Link>
           </Nav>
 
           {/* Call-to-action button */}
