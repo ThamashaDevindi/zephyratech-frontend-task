@@ -84,9 +84,9 @@
 }
 
 .custom-outline-button:hover {
-  background-color: #cc7cf8 !important;
+  background-color: #a464fd !important;
   color: rgb(0 0 0 ) !important; /* darker text on hover */
-  border-color: #cc7cf8 !important;
+  border-color: #a464fd !important;
 }
 
 
