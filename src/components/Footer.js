@@ -1,16 +1,34 @@
 import React from 'react';
-import logo from '../assets/logo.png'; // Assuming you have a logo image
+import spotifyLogo from '../assets/spotify.png';
+import facebookLogo from '../assets/facebook.png';
+import twitterLogo from '../assets/twitter.png';
+import metaLogo from '../assets/meta.png';
+import instagramLogo from '../assets/instagram.png';
 
 const Footer = () => {
+  const trustedLogos = [
+    { name: 'Spotify', src: spotifyLogo },
+    { name: 'Facebook', src: facebookLogo },
+    { name: 'Twitter', src: twitterLogo },
+    { name: 'Meta', src: metaLogo },
+    { name: 'Instagram', src: instagramLogo },
+  ];
+
   return (
     <footer className="bg-black text-white py-5 mt-5">
       <div className="container">
         {/* Four horizontal sections */}
         <div className="row text-start mb-4">
-          {/* Section 1: Logo with name */}
-          <div className="col-md-3 d-flex align-items-center gap-2 mb-3 mb-md-0">
-            <img src={logo} alt="Logo" style={{ width: '40px', height: '40px' }} />
-            <span className="fs-4 fw-bold">MRKT.AI</span>
+          {/* Section 1: Trusted By Logos */}
+          <div className="col-md-3 d-flex align-items-center gap-3 flex-wrap mb-3 mb-md-0">
+            {trustedLogos.map((logo, i) => (
+              <img
+                key={i}
+                src={logo.src}
+                alt={logo.name}
+                style={{ height: '30px', objectFit: 'contain' }}
+              />
+            ))}
           </div>
 
           {/* Section 2: Solution */}
