@@ -1,27 +1,35 @@
-
 import React from 'react';
 import heroImg from '../assets/ai-bot.png';
 import '../styles/custom.css';
 
+// Hero section component
 const Hero = () => {
     return (
         <div className="py-5 px-3 d-flex justify-content-center align-items-center text-center">
             <div className="container">
                 <div className="row align-items-center justify-content-center">
+                    
+                    {/* Text Content Section */}
                     <div className="col-md-6 text-md-start text-center">
+                        {/* Heading */}
                         <h1 className="ai-heading">
                             <span className="gradient-color">AI-Driven</span> <strong>marketing</strong>
                         </h1>
+
+                        {/* Description */}
                         <p className="lead mt-3">
                             Enhance your marketing strategy with our AI-powered tools that optimize campaigns and boost results.
                         </p>
+
+                        {/* Action Buttons */}
                         <div className="mt-4">
                             <button className="custom-gradient-button me-2">Get Started</button>
                             <button className="custom-outline-button">Watch a Demo</button>
                         </div>
-                        {/* Rating section */}
+
+                        {/* Rating Display Section */}
                         <div className="mt-3" style={{ fontSize: '1.1rem', fontWeight: '600', color: '#444' }}>
-                            <div>Tested Software Reviewers</div>
+                            <div>Trusted by Industry Experts</div>
                             <div style={{ display: 'flex', alignItems: 'center', gap: '8px', marginTop: '4px' }}>
                                 <div style={{ color: '#FFD700', fontSize: '1.6rem', letterSpacing: '2px' }}>
                                     ★★★★★
@@ -29,8 +37,9 @@ const Hero = () => {
                                 <div style={{ fontSize: '1rem', color: '#333' }}>4.9 / 5.0</div>
                             </div>
                         </div>
-
                     </div>
+
+                    {/* Hero Image Section */}
                     <div className="col-md-6 text-center mt-4 mt-md-0">
                         <img
                             src={heroImg}
