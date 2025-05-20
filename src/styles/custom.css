@@ -115,3 +115,11 @@
   background-clip: text;
   color: transparent;
 }
+
+.nav-link:hover {
+  font-weight: bold;
+}
+
+.nav-link {
+  transition: font-weight 0.2s ease;
+}
